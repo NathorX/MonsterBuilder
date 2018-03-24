@@ -18,5 +18,12 @@ namespace ManageInventory.AllArmorTypes
         public int Rarity { get => Rarity; set => Rarity = value; }
         public int DecorationSlot { get => DecorationSlot; set => DecorationSlot = value; }
         public int Defense { get => Defense; set => Defense = value; }
+        public string armorPlacement { get => armorPlacement; set => armorPlacement = value; }
+
+        public Waist()
+        {
+            this.armorPlacement = "Waist";
+        }
+
     }
 }

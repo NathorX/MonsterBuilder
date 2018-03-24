@@ -14,6 +14,7 @@ namespace ManageInventory
         int LightningRes { get; set; }
         int IceRes { get; set; }
         int DragonRes { get; set; }
+        string armorPlacement { get;}
 
     }
 }

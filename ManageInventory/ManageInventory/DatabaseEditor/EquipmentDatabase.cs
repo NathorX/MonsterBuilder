@@ -1,9 +1,11 @@
-﻿using System;
+﻿using ManageInventory.AllArmorTypes;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace ManageInventory.DatabaseEditor
 {
@@ -33,9 +35,54 @@ namespace ManageInventory.DatabaseEditor
 
         }
 
-
-        public void SaveDatabase()
+        /// <summary>
+        /// Saves the database to a file in XML format.
+        /// </summary>
+        /// <param name="writer"></param>
+        public void SaveDatabase(XmlWriter writer)
         {
+            if (writer == null)
+            {
+                return;
+            }
+
+            //Try writing to
+            try
+            {
+                writer.WriteStartDocument();
+                writer.WriteStartElement("Armor");
+                foreach (IArmor armor in armorDictionary.Values)
+                {
+                    switch (armor.armorPlacement)
+                    {
+
+                        case "Head":
+                            writer.WriteStartElement("Head");
+                            break;
+
+                        case "Chest":
+                            writer.WriteStartElement("Chest");
+                            break;
+
+                        case "Arms":
+                            writer.WriteStartElement("Arms");
+                            break;
+
+                        case "Waist":
+                            writer.WriteStartElement("Waist");
+                            break;
+
+                        case "Feet":
+                            writer.WriteStartElement("Feet");
+                            break;
+
+                    }
+                }
+            }
+            catch (IOException)
+            {
+
+            }
 
         }
 
