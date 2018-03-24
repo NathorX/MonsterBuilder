@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ManageInventory
 {
-    class Program
+    class ProgramStart
     {
         static void Main(string[] args)
         {

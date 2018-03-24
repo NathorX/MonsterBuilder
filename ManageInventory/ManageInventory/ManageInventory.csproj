@@ -63,6 +63,9 @@
     <Compile Include="AllWeaponTypes\LongSword.cs" />
     <Compile Include="AllWeaponTypes\SwitchAxe.cs" />
     <Compile Include="AllWeaponTypes\SwordAndShield.cs" />
+    <Compile Include="DatabaseEditor\EquipmentDatabase.cs" />
+    <Compile Include="DatabaseEditor\NewArmor.cs" />
+    <Compile Include="DatabaseEditor\NewWeapon.cs" />
     <Compile Include="EquipmentInterfaces\IArmor.cs" />
     <Compile Include="EquipmentInterfaces\IWeapon.cs" />
     <Compile Include="EquipmentInterfaces\IEquipment.cs" />
@@ -72,7 +75,7 @@
     <Compile Include="InventoryWindow.Designer.cs">
       <DependentUpon>InventoryWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="ProgramStart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

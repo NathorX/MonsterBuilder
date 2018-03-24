@@ -8,15 +8,15 @@ namespace ManageInventory.AllArmorTypes
 {
     class Chest : IArmor
     {
-        public string Skill { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int FireRes { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int WaterRes { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int LightningRes { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int IceRes { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int DragonRes { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public string Name { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Rarity { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int DecorationSlot { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
-        public int Defense { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public string Skill { get => Skill; set => Skill = value; }
+        public int FireRes { get => FireRes; set => FireRes = value; }
+        public int WaterRes { get => WaterRes; set => WaterRes = value; }
+        public int LightningRes { get => LightningRes; set => LightningRes = value; }
+        public int IceRes { get => IceRes; set => IceRes = value; }
+        public int DragonRes { get => DragonRes; set => DragonRes = value; }
+        public string Name { get => Name; set => Name = value; }
+        public int Rarity { get => Rarity; set => Rarity = value; }
+        public int DecorationSlot { get => DecorationSlot; set => DecorationSlot = value; }
+        public int Defense { get => Defense; set => Defense = value; }
     }
 }
